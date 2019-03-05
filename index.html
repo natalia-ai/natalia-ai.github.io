@@ -1,255 +1,372 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <title>OI</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <title>natalia-ai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+    <script src="https://use.fontawesome.com/e76d8ae019.js"></script>
+
 </head>
-
-<body>
-
-  <div class="container">
+<body class="page">
     <header class="page-header">
-      <h1>Наталья Иванова</h1>
-      <p>Привет, я&nbsp;HTML верстальщик. Начинающий фронтэнд разработчик. &nbsp;На данный момент ищу работу</p>
+            <div class="page-header__logo">
+                <a href="/">Наталья Иванова</a>
+            </div>
+
+            <div class="page-header__nav-toggle">
+                <div id="toggle">
+                    <input type="checkbox">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="page-header__nav">
+                <div class="page-header__menu">
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li class="visually-hidden"><a href="/blog.html">Blog</a></li>
+                            <li class="visually-hidden"><a href="/page.html">Sample page</a></li>
+                            <li class="visually-hidden"><a href="/full-width-page.html">Full width</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="visually-hidden page-header__lang">
+                    <ul>
+                        <li><a href="/">EN</a></li>
+                        <li><a href="/">RU</a></li>
+                    </ul>
+                </div>
+            </div>
     </header>
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <table>
-        <tr>
-          <td>Email:</td>
-          <td>
-            <a href="mailto:karamelshokoladovna@gmail.com">karamelshokoladovna@gmail.com</a>
-          </td>
-        </tr>
-        <tr>
-          <td>GitHub:</td>
-          <td>
-            <a href="https://github.com/natalia-ai">https://github.com/natalia-ai</a>
-          </td>
-        </tr>
-        <tr>
-          <td>ВКонтакте:</td>
-          <td>
-            <a href="https://vk.com/id459109765">https://vk.com/id459109765</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Телефон:</td>
-          <td>
-            <a href="tel:89231972070">8&nbsp;923 197-20-70</a>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <section class="skills">
-      <h2>Навыки</h2>
-      <table>
-        <tr>
-          <th class="hyphenate">Разметка</th>
-          <th class="hyphenate">Стили</th>
-          <th class="hyphenate">Скрипты</th>
-          <th class="hyphenate">Автоматизация</th>
-          <th class="hyphenate">Дополнительно</th>
-        </tr>
-        <tr>
-          <td>
-            HTML
-            <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="90" height="10" />
-            </svg>
-          </td>
-          <td>
-            CSS
-            <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="90" height="10" />
-            </svg>
-          </td>
-          <td>
-            JavaScript
-            <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="75" height="10" />
-            </svg>
-          </td>
-          <td>
-            Gulp
-            <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="120" height="10" />
-            </svg>
-          </td>
-          <td>
-            git
-            <svg class="line  line-min" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="50" height="10" />
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            БЭМ
-            <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="100" height="10" />
-            </svg>
-          </td>
-          <td>
-            SCSS
-            <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="100" height="10" />
-            </svg>
-          </td>
-          <td>
-            JQuery
-            <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="90" height="10" />
-            </svg>
-          </td>
-          <td>
-          </td>
-          <td>
-            PixelPerfect
-            <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="73" height="10" />
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td>
-          </td>
-          <td></td>
-          <td>
-            Avocode
-            <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
-              <rect x="0" y="-3" width="130" height="10" />
-            </svg>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <section class="experience">
-      <h2>Опыт</h2>
-      <table>
-        <tr>
-          <td>2018:</td>
-          <td>Стажировка в компании
-            <a href="https://lavpander.ru/">Lavpander</a>. Вёрстка модальных окон.</td>
-        </tr>
-        <tr>
-          <td>2001-2019:</td>
-          <td>Работа в 
-            <a href="http://www.kinetics.nsc.ru/">Институте Химической Кинетики и Горения СО РАН</a>. Прошла путь от старшего лаборанта до научного сотрудника.
-          </td>
-        </tr>
-      </table>
-    </section>
-    <section class="education">
-      <h2>Образование</h2>
-      <table>
-        <tr>
-          <td>2018:</td>
-          <td>Базовый интенсив по Java Script</td>
-        </tr>
-        <tr>
-          <td>2018:</td>
-          <td>Базовый интенсив по HTML и CSS</td>
-        </tr>
-        <tr>
-          <td>2003 – 2006:</td>
-          <td>Аспирантура Института Химичсекой Кинетики и Горения СО РАН. По окончанию успешно защитила диссертацию.</td>
-        </tr>
-        <tr>
-          <td>1997 – 2003:</td>
-          <td>Новосибирский Государственный Педагогический Университет. Специальность: учитель химии и экологии. Диплом с отличием.</td>
-        </tr>
-      </table>
-    </section>
-    <section class="projects">
-      <h2>Примеры работ</h2>
-      <table>
-        <tr>
-          <td>
-            Pilates:
-          </td>
-          <td>
-            Лэндинг,
-            <span class="keyword">CSS Grid</span>,
-            <span class="keyword">CSS Flex</span>,
-            <span class="keyword">Адаптивная вёрстка</span>,
-            <span class="keyword">Ретина</span>,
-            <span class="keyword">БЭМ</span>,
-            <span class="keyword">SVG</span>,
-            <span class="keyword">Gulp</span>,
-            <span class="keyword">Scss</span>,
-            <span class="keyword">JQuery</span>,
-            <span class="keyword">Java Script</span>
-            <ul>
-              <li>
-                <a href="https://github.com/natalia-ai/pilates" target="_blank">Репозиторий</a>
-              </li>
-              <li>
-                <a href="https://natalia-ai.github.io/pilates/index.html" target="_blank">Посмотреть</a>
-              </li>
-            </ul>
-          </td>
-        </tr>
 
-        <tr>
-          <td>
-            Нямушка:
-          </td>
-          <td>
-            Тестовое задание для компании Fun-box.ru,
-            <span class="keyword">CSS Flex</span>,
-            <span class="keyword">Адаптивная вёрстка</span>,
-            <span class="keyword">БЭМ</span>,
-            <span class="keyword">SVG</span>,
-            <span class="keyword">Gulp</span>,
-            <span class="keyword">Scss</span>,
-            <span class="keyword">JQuery</span>
-            <ul>
-              <li>
-                <a href="https://github.com/natalia-ai/funBox" target="_blank">Репозиторий</a>
-              </li>
-              <li>
-                <a href="https://natalia-ai.github.io/funBox/index.html" target="_blank">Посмотреть</a>
-              </li>
-            </ul>
-          </td>
-        </tr>
+<main>
+  <div class="home-slider">
+    <div class="home-slider__wrapper">
+      <div id="home-slider" class="home-slider__list">
+        <div class="home-slider__item">
+          <a href="/"><img src="img/slide2.jpg" alt=""></a>
+        </div>
+        <div class="home-slider__item">
+          <a href="/"><img src="img/slide1.jpg" alt=""></a>
+        </div>
+      </div>
 
-        <tr>
-          <td>
-            Keksobooking:
-          </td>
-          <td>
-            Cервис бронирования отелей (учебный проект),
-            <span class="keyword">Java Script</span>
-            <ul>
-              <li>
-                <a href="https://github.com/natalia-ai/281055-keksobooking" target="_blank">Репозиторий</a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <p class="copy">copyright &copy; 2019 :)</p>
+      <div class="home-slider__controls">
+        <span class="home-slider__arrow home-slider__arrow--left"></span>
+        <span class="home-slider__arrow home-slider__arrow--right"></span>
+      </div>
+    </div>
   </div>
-</body>
 
+  <div class="home-portfolio">
+    <div class="home-portfolio__wrapper">
+      <header>
+        <h2 class="secondary-title">Мои работы</h2>
+      </header>
+
+      <div class="home-portfolio-slider">
+        <div class="scrollyeah">
+          <div class="home-portfolio-slider__item">
+            <div class="portfolio__item portfolio-item">
+              <div class="portfolio-item__img">
+                <img src="img/pilates.jpg" alt="pilates">
+              </div>
+              <div class="portfolio-item__link">
+                <a href="portfolio-item__pilates.html">Pilates</a>
+              </div>
+            </div>
+          </div>
+          <div class="home-portfolio-slider__item">
+            <div class="portfolio__item portfolio-item">
+              <div class="portfolio-item__img">
+                <img src="img/njamushka.jpg" alt="njamushka">
+              </div>
+              <div class="portfolio-item__link">
+                <a href="portfolio-item__njamushka.html">Нямушка</a>
+              </div>
+            </div>
+          </div>
+          <!--<div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/5.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/7.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/8.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-portfolio-slider__item">
+                        <div class="portfolio__item portfolio-item">
+                            <div class="portfolio-item__img">
+                                <img src="img/9.jpg" alt="">
+                            </div>
+                            <div class="portfolio-item__link">
+                                <a href="portfolio-item.html">Project name</a>
+                            </div>
+                        </div>
+                    </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-content">
+    <div class="about-me">
+      <header>
+        <h2 class="secondary-title">Обо мне</h2>
+      </header>
+      <div class="about-me__intoduction">
+        <div class="about-me__img">
+          <img src="img/avatar.jpg" alt="">
+        </div>
+        <p class="about-me__intoduction-text">
+          Привет, я HTML верстальщик. Начинающий&nbsp;фронтэнд разработчик.
+          На&nbsp;данный&nbsp;момент ищу&nbsp;работу.
+        </p>
+      </div>
+      <section class="about-me__skills">
+        <h2 class="secondary-title">Навыки</h2>
+        <div class="about-me__skills-wrapper">
+          <div class="skills">
+            <h3 class="skills__title">Разметка</h3>
+            <p class="skills__text">
+              HTML
+              <svg class="skills__line skills__line-max" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="90" height="10" />
+              </svg>
+            </p>
+            <p class="skills__text"> БЭМ
+              <svg class="skills__line  skills__line-middle" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="100" height="10" />
+              </svg>
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills__title">Стили</h3>
+            <p class="skills__text">
+              CSS
+              <svg class="skills__line  skills__line-max" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="90" height="10" />
+              </svg>
+            </p>
+            <p class="skills__text">
+              SCSS
+              <svg class="skills__line  skills__line-max" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="100" height="10" />
+              </svg>
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills__title">Скрипты</h3>
+            <p class="skills__text">
+              JavaScript
+              <svg class="skills__line  skills__line-middle" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="75" height="10" />
+              </svg>
+            </p>
+            <p class="skills__text">
+              JQuery
+              <svg class="skills__line  skills__line-middle" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="90" height="10" />
+              </svg>
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills__title">Автоматизация</h3>
+            <p class="skills__text">
+              Gulp
+              <svg class="skills__line  skills__line-max" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="120" height="10" />
+              </svg>
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills__title">Дополнительно</h3>
+            <p class="skills__text">
+              git
+              <svg class="skills__line  skills__line-min" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="50" height="10" />
+              </svg>
+            </p>
+            <p class="skills__text">
+              PixelPerfect
+              <svg class="skills__line skills__line-middle" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="73" height="10" />
+              </svg>
+            </p>
+            <p class="skills__text">
+              Avocode
+              <svg class="skills__line skills__line-max" width="100" height="10" viewBox="0 0 180 4"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2" />
+                <rect x="0" y="-3" width="130" height="10" />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-me__experience">
+        <h2 class="secondary-title">Опыт</h2>
+        <div class="about-me__experience-wrapper">
+          <div class="experience">
+            <p class="experience__text">2018:</p>
+            <p class="experience__text experience__text-description">Стажировка в компании
+              <a href="https://lavpander.ru/">Lavpander</a>. Вёрстка модальных окон.
+            </p>
+          </div>
+          <div class="experience">
+            <p class="experience__text">2001-2019:</p>
+            <p class="experience__text experience__text-description">Работа в
+              <a href="http://www.kinetics.nsc.ru/">Институте Химической Кинетики и Горения СО РАН</a>.
+              Прошла путь от инженера до научного сотрудника.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-me__education">
+        <h2 class="secondary-title">Образование</h2>
+        <div class="about-me__education-wrapper">
+          <div class="education">
+            <p class="education__text education__text-year">2018:</p>
+            <p class="education__text education__text-description">Базовый интенсив по Java Script.
+            </p>
+          </div>
+          <div class="education">
+            <p class="education__text education__text-year">2018:</p>
+            <p class="education__text education__text-description">Базовый интенсив по HTML и CSS.
+            </p>
+          </div>
+          <div class="education">
+            <p class="education__text education__text-year">2003 – 2006:</p>
+            <p class="education__text education__text-description">Аспирантура Института Химичсекой Кинетики и Горения
+              СО РАН. По окончанию успешно защитила
+              диссертацию.
+            </p>
+          </div>
+          <div class="education">
+            <p class="education__text education__text-year">1997 – 2003:</p>
+            <p class="education__text education__text-description">Новосибирский Государственный Педагогический
+              Университет. Специальность: учитель химии и
+              экологии.
+              Диплом с отличием.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--	<div class="recent-blog-posts">
+				<header>
+					<h2 class="secondary-title">Recent blog posts</h2>
+				</header>
+				<ul class="recent-blog-posts__list">
+					<li><a href="/post.html">A Deep Dive Into Axure 8: A Comprehensive Review</a></li>
+					<li><a href="/post.html">Easy Steps To Better Icon Design</a></li>
+					<li><a href="/post.html">Design Principles To Evaluate Your Product</a></li>
+					<li><a href="/post.html">A Little Journey Through (Small And Big) E-Commerce Websites</a></li>
+					<li><a href="/post.html">Powerful Workflow Tips, Tools And Tricks For Web Designers</a></li>
+				</ul>
+			</div>-->
+  </div>
+</main>
+
+    <footer class="page-footer">
+            <div class="page-footer__left-text">
+                <p>Copyright 2019</p>
+            </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
