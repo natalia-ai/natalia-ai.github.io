@@ -94,30 +94,40 @@
     return $(cardId).next('.card-box__make-your-pet-happy');
   }
 
+  function bueProduct(cardId) {
+    return $(cardId).find('.card-checkbox__to-bue');
+  }
+
   function disableCard(inputName, cardId) {
     var cardBoxMakeYourPetHappy = getHappyPet(cardId);
+    var productBue = bueProduct(cardId);
     if ($(inputName).prop('disabled', true)) {
       $(cardId).addClass('is-disabled');
       cardBoxMakeYourPetHappy.next('.card-box__description').css('visibility', 'hidden');
       cardBoxMakeYourPetHappy.css('visibility', 'hidden');
+      productBue.css('visibility', 'hidden');
     }
   };
 
   function selectCard(inputName, cardId) {
     var cardBoxMakeYourPetHappy = getHappyPet(cardId);
+    var productBue = bueProduct(cardId);
     if ($(inputName).prop('selected', true)) {
       $(cardId).addClass('is-selected');
       cardBoxMakeYourPetHappy.next('.card-box__description').css('visibility', 'visible');
       cardBoxMakeYourPetHappy.css('visibility', 'hidden');
+      productBue.css('visibility', 'hidden');
       $(cardId).find('input').prop('checked', true);
     }
   };
 
   function defaultCard(inputName, cardId) {
     var cardBoxMakeYourPetHappy = getHappyPet(cardId);
+    var productBue = bueProduct(cardId);
     if ($(inputName).prop('selected', false)) {
       cardBoxMakeYourPetHappy.next('.card-box__description').css('visibility', 'hidden');
       cardBoxMakeYourPetHappy.css('visibility', 'visible');
+      productBue.css('visibility', 'visible');
     }
   };
 
@@ -134,11 +144,13 @@
       $(this).removeClass('is-selected-hover');
       $(description).css('visibility', 'hidden');
       $(makeYourPetHappy).css('visibility', 'visible');
+      $(this).find('.card-checkbox__to-bue').css('visibility', 'visible');
       $(checkbox).prop('checked', false);
     } else {
       $(this).addClass('is-selected');
       $(description).css('visibility', 'visible');
       $(makeYourPetHappy).css('visibility', 'hidden');
+      $(this).find('.card-checkbox__to-bue').css('visibility', 'hidden');
       $(checkbox).prop('checked', true);
     }
   };
