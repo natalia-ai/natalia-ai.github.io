@@ -1,75 +1,27 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>natalia-ai</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-
-    <script src="https://use.fontawesome.com/e76d8ae019.js"></script>
-
-</head>
-<body class="page">
-    <header class="page-header">
-            <div class="page-header__logo">
-                <a href="/">Наталья Иванова</a>
-            </div>
-
-            <div class="page-header__nav-toggle">
-                <div id="toggle">
-                    <input type="checkbox">
-                    <span></span>
-                </div>
-            </div>
-
-            <div class="page-header__nav">
-                <div class="page-header__menu">
-                    <div class="menu">
-                        <ul class="menu__list">
-                            <li><a href="/portfolio.html">Portfolio</a></li>
-                            <li class="visually-hidden"><a href="/blog.html">Blog</a></li>
-                            <li class="visually-hidden"><a href="/page.html">Sample page</a></li>
-                            <li class="visually-hidden"><a href="/full-width-page.html">Full width</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="visually-hidden page-header__lang">
-                    <ul>
-                        <li><a href="/">EN</a></li>
-                        <li><a href="/">RU</a></li>
-                    </ul>
-                </div>
-            </div>
-    </header>
+//= parts/header.html
 
 <main>
-  <div class="page portfolio-item">
+  <div class="page">
     <div class="page__wrapper">
       <header class="page__header">
-        <h1 class="page__title">Pilates</h1>
+        <h1 class="page__title">Bootstrap 4</h1>
       </header>
 
       <section class="portfolio-item__wrapper">
-        <div class="portfolio-item__left">
-          <img src="img/bootstrap_desc.jpg" alt="bootstrap">
-          <img src="img/bootstrap_mob.jpg" alt="bootstrap">
+        <div class="portfolio-item__left portfolio-item__left-bootstrap">
+          <img src="img/bootstrap_desc.jpg" alt="pilates-scan">
         </div>
         <div class="portfolio-item__right">
-          <h2>Лэндинг</h2>
+          <h2>Тестовое задание Bootstrap</h2>
           <p>
-            <span class="portfolio-item__keyword">Bootsprap</span>
+            <span class="portfolio-item__keyword">Bootstrap 4</span>
             <span class="portfolio-item__keyword">CSS Flex</span>
             <span class="portfolio-item__keyword">Адаптивная вёрстка</span>
             <span class="portfolio-item__keyword">Gulp</span>
             <span class="portfolio-item__keyword">Scss</span>
             <ul>
               <li>
-                <a href="https://github.com/natalia-ai/pilates" target="_blank">Репозиторий</a>
+                <a href="https://github.com/natalia-ai/markup-test" target="_blank">Репозиторий</a>
               </li>
             </ul>
           </p>
@@ -79,15 +31,4 @@
   </div>
 </main>
 
-    <footer class="page-footer">
-            <div class="page-footer__left-text">
-                <p>Copyright 2019</p>
-            </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="js/script.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
+//= parts/footer.html
