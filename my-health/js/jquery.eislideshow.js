@@ -1,5 +1,5 @@
 use strict';
-(function ($) {
+(function () {
 	/*scroll from top*/
 	$(document).ready(function () {
 		$('.main-nav__link').click(function (evt) {
@@ -37,4 +37,4 @@ use strict';
 
   })
   
-})(jQuery)
+})()
