@@ -1,4 +1,4 @@
-use strict';
+
 (function () {
 	/*scroll from top*/
 	$(document).ready(function () {
