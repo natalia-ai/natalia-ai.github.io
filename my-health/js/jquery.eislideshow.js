@@ -90,7 +90,7 @@
 		// titles animation easing
 		titleeasing			: '',
 		// maximum width for the thumbs in pixels
-		thumbMaxWidth		: 16
+		thumbMaxWidth		: 21
     };
 	
 	$.Slideshow.prototype 		= {
